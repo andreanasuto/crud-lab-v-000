@@ -10,11 +10,12 @@ class ReviewInput extends Component {
   }
 
   handleChange = (event) => {
-    event.preventDefault()
     this.setState({
       text: event.target.value
     })
   }
+
+  handleSubmit = (event)
 
   render() {
     return (
