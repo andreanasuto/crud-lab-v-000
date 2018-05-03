@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-const restaurants = 'hello'
+const restaurants = this.props.restaurants.map(function(restaurant){
+  return restaurant.text
+})
 
 class Restaurants extends Component {
   render() {
