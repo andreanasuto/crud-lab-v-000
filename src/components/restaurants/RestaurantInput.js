@@ -34,7 +34,7 @@ class RestaurantInput extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' value={this.props.text} onChange={this.handleChange} />
+          <input type='text' value={this.state.text} onChange={this.handleChange} />
           <input type='submit'/>
         </form>
       </div>
