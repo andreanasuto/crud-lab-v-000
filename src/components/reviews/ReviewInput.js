@@ -17,7 +17,13 @@ class ReviewInput extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.store.dispatch
+    this.props.store.dispatch({
+      type: 'Some_shit',
+      reviews: {
+        text: event.target.value
+      }
+      }
+    )
   }
 
   render() {
