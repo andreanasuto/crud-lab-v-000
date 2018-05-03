@@ -16,8 +16,8 @@ class RestaurantInput extends Component {
   handleOnSubmit(event) {
     event.preventDefault();
     this.props.store.dispatch({
-      type: 'ADD_BAND',
-      band: {
+      type: 'ADD_RESTAURANT',
+      restaurant: {
         text: this.state.text,
       },
     });
