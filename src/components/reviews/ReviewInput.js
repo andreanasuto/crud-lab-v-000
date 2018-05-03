@@ -21,7 +21,7 @@ class ReviewInput extends Component {
     event.preventDefault()
     this.props.store.dispatch({
       type: 'ADD_REVIEW',
-      reviews: {
+      review: {
         text: event.target.value,
         id: event.target.id
       }
