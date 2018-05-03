@@ -10,8 +10,11 @@ class ReviewInput extends Component {
   }
 
   handleChange = (event) => {
-    
+    this.setState({
+      text: event.target.value
+    })
   }
+
   render() {
     return (
       <div>
