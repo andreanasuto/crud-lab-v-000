@@ -10,8 +10,13 @@ class ReviewInput extends Component {
   }
 
   handleChange = (event) => {
+    event.preventDefault()
     this.setState({
       text: event.target.value
+    })
+
+    this.props.store.dispatch({
+      type: ''
     })
   }
 
