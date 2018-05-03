@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 class Restaurant extends Component {
   handleClick = (event) => {
-    
+
   }
+
   render() {
     return (
       <div>
