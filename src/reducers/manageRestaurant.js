@@ -5,7 +5,7 @@ export default function manageRestaurants(state, action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
       id++;
-      const restaurant = Object.assign({}, action.todo, { id: id });
+      const restaurant = Object.assign({}, action.text, { id: id });
       return { todos: state.todos.concat(todo) };
     case 'DELETE_RESTAURANT':
       return 'hello'
