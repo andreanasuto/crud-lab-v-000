@@ -15,7 +15,7 @@ class ReviewInput extends Component {
   handleChange = (event) => {
     this.setState({
       text: event.target.value,
-      restaurantId:
+      restaurantId: event.target.id
     })
   }
 
