@@ -6,6 +6,7 @@ class RestaurantInput extends Component {
       <div>
         <form>
           <input type='text' />
+          <input type='submit' />
         </form>
       </div>
     );
