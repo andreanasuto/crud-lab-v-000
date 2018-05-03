@@ -7,7 +7,8 @@ export default function manageRestaurants(state, action) {
       const restaurant = Object.assign({}, action.text, { id: cuid });
       return { restaurants: state.restaurants.concat(restaurant) };
     case 'DELETE_RESTAURANT':
-      return state
+      const restaurants =
+      return {restaurants}
     default:
       return state
   }
