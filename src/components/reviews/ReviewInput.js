@@ -14,10 +14,6 @@ class ReviewInput extends Component {
     this.setState({
       text: event.target.value
     })
-
-    this.props.store.dispatch({
-      type: ''
-    })
   }
 
   render() {
