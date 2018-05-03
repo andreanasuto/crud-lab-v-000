@@ -8,6 +8,10 @@ class ReviewInput extends Component {
       text: ''
     }
   }
+
+  handleChange = (event) => {
+    
+  }
   render() {
     return (
       <div>
