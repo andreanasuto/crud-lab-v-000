@@ -22,8 +22,7 @@ class ReviewInput extends Component {
       reviews: {
         text: event.target.value
       }
-      }
-    )
+      })
   }
 
   render() {
