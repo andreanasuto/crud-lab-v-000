@@ -10,14 +10,14 @@ class RestaurantInput extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  
+
   handleChange = (event) => {
     this.setState({
       text: event.target.value
     })
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.store.dispatch({
       type: 'ADD_RESTAURANT',
