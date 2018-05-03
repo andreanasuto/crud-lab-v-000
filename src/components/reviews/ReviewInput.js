@@ -19,7 +19,7 @@ class ReviewInput extends Component {
     return (
       <div>
         <form>
-          <input type='text' onChange={this.handleChange}/>
+          <input type='text' value={this.props.text} onChange={this.handleChange}/>
         </form>
       </div>
     );
