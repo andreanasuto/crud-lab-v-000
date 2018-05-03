@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class Restaurant extends Component {
   handleClick = (event) => {
-    this.props.state.dispatch({
+    event.preventDefault();
+    this.props.store.dispatch({
       type: 'DELETE_RESTAURANT',
-      id:
+      id: event.target.id
     })
   }
 
@@ -12,7 +13,7 @@ class Restaurant extends Component {
     return (
       <div>
         <li> {this.props.restaurant.text} </li>
-        <button onClick={this.handleClick} value: {this.props.restaurant.id}>Delete me</button>
+        <button onClick={this.handleClick} id: {this.props.restaurant.id}>Delete me</button>
       </div>
     );
   }
