@@ -29,7 +29,7 @@ class ReviewInput extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' value={this.props.text} id={this.props.restaurant.id} onChange={this.handleChange}/>
+          <input type='text' value={this.props.text} id={this.props.id} onChange={this.handleChange}/>
           <input type='submit' />
         </form>
       </div>

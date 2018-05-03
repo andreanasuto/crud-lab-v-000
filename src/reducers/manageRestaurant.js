@@ -12,7 +12,7 @@ export default function manageRestaurants(state, action) {
       })
       return {restaurants}
     case 'ADD_REVIEW':
-      const review = Object.assign({}, action.text, {restaurantId: action.id})
+      const review = Object.assign({}, action.review.text, {restaurantId: action.review.id})
       return { reviews: state.reviews.concat(review) }
     default:
       return state
