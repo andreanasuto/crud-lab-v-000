@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class RestaurantInput extends Component {
   constructor() {
     super()
-    this.state{(
+    this.state = {(
       text: ''
     )}
   }
