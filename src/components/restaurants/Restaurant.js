@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 class Restaurant extends Component {
   handleClick = (event) => {
     this.props.state.dispatch({
-      type: 'DELETE_RESTAURANT'
+      type: 'DELETE_RESTAURANT',
+      text: event.target.value
     })
   }
 
