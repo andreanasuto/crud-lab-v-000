@@ -17,7 +17,7 @@ class ReviewInput extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    this.props.store.getState().dispatch
+    this.props.store.dispatch
   }
 
   render() {
