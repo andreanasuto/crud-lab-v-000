@@ -15,7 +15,9 @@ class ReviewInput extends Component {
     })
   }
 
-  handleSubmit = (event)
+  handleSubmit = (event) => {
+    event.preventDefault()
+  }
 
   render() {
     return (
