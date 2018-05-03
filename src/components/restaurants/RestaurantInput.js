@@ -5,7 +5,7 @@ class RestaurantInput extends Component {
     return (
       <div>
         <form>
-          <input type='text' />
+          <input type='text' onChange={this.handleChange} />
           <input type='submit' />
         </form>
       </div>
