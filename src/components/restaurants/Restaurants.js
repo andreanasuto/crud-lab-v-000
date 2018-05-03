@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Restaurants extends Component {
-  const restaurants = 
+  const restaurants = 'hello'
   render() {
     return(
       <ul>
