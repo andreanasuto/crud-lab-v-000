@@ -5,7 +5,9 @@ class Restaurant extends Component {
     event.preventDefault();
     this.props.store.dispatch({
       type: 'DELETE_RESTAURANT',
-      id: event.target.id
+      restaurant: {
+        id: event.target.id
+      }
     })
   }
 
