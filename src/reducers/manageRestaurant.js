@@ -12,8 +12,8 @@ export default function manageRestaurants(state, action) {
       })
       return {restaurants}
     case 'ADD_REVIEW':
-      const review = Object.assign({}, action.review.text,{ id: cuid }, {restaurantId: action.review.id})
-      return { reviews: state.reviews.concat(review) }
+      const review = Object.assign({}, action.review.text, { id: cuid })
+      return Object.assign({}, state, {reviews: state.reviews.concat(review)}) 
     default:
       return state
   }
