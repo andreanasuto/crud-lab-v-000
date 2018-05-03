@@ -5,7 +5,8 @@ export const cuidFn = cuid;
 export default function manageRestaurants(state, action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
-      return state.store.restaurants
+       state.store.restaurants.concat(action.text)
+       return {restaurants}
     default:
       return state
   }
