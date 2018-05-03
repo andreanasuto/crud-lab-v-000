@@ -11,6 +11,8 @@ export default function manageRestaurants(state, action) {
         return el.id !== action.id
       })
       return {restaurants}
+    case 'ADD_REVIEW':
+      const review = Object.assign({}, action.text, {id: cuid})
     default:
       return state
   }
