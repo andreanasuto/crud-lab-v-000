@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 const restaurants = this.props.restaurants.map(function(restaurant){
-  return restaurant.text
+  return <Restaurant restaurant={restaurant} />
 })
 
 class Restaurants extends Component {
