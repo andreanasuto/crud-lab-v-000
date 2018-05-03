@@ -16,7 +16,7 @@ class ReviewInput extends Component {
     })
   }
 
-  handleSubmit = (event) => {
+  handleSubmit(event) {
     event.preventDefault()
     this.props.store.dispatch({
       type: 'ADD_REVIEW',
