@@ -7,6 +7,8 @@ export default function manageRestaurants(state, action) {
     case 'ADD_RESTAURANT':
       const restaurants = state.store.restaurants.concat(action.text)
       return {restaurants}
+    case 'DELETE_RESTAURANT':
+      return 'hello'
     default:
       return state
   }
