@@ -14,7 +14,8 @@ class ReviewInput extends Component {
 
   handleChange = (event) => {
     this.setState({
-      text: event.target.value
+      text: event.target.value,
+      restaurantId:
     })
   }
 
@@ -33,7 +34,7 @@ class ReviewInput extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' value={this.props.text} id={this.props.id} onChange={this.handleChange}/>
+          <input type='text' value={this.state.text} id={this.state.id} onChange={this.handleChange}/>
           <input type='submit' />
         </form>
       </div>
