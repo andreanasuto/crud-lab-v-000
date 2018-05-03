@@ -6,6 +6,8 @@ class ReviewInput extends Component {
     this.state = {
       text: ''
     }
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = (event) => {
