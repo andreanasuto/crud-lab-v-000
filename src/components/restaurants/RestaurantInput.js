@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
 class RestaurantInput extends Component {
-  handleChange = (event) => {
-    
+  constructor() {
+    super()
+    this.state{(
+      text: ''
+    )}
   }
+  handleChange = (event) => {
+
+  }
+
   render() {
     return (
       <div>
