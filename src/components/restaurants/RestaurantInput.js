@@ -13,12 +13,25 @@ class RestaurantInput extends Component {
     })
   }
 
+  handleOnSubmit(event) {
+    event.preventDefault();
+    this.props.store.dispatch({
+      type: 'ADD_BAND',
+      band: {
+        text: this.state.text,
+      },
+    });
+    this.setState({
+      text: '',
+    });
+  }
+
   render() {
     return (
       <div>
         <form>
           <input type='text' value={this.props.text} onChange={this.handleChange} />
-          <input type='submit' />
+          <input type='submit' onSubmit={this.handleOnSubmit} />
         </form>
       </div>
     );
