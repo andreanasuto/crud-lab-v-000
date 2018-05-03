@@ -5,7 +5,7 @@ class RestaurantInput extends Component {
     return (
       <div>
         <form>
-          <input> </input>
+          <input type="text">Your restaurant</input>
           <input type="submit" />
         </form>
       </div>
