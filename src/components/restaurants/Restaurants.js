@@ -3,9 +3,9 @@ import Restaurant from './Restaurant'
 
 class Restaurants extends Component {
   render() {
-
-    const restaurants = this.props.getState().restaurants.map(function(restaurant){
-      return <Restaurant restaurant={restaurant} store={this.props} />
+    const { store } = this.props;
+    const restaurants = store.getState().restaurants.map(function(restaurant){
+      return <Restaurant restaurant={restaurant} store={store} />
      })
 
     return(
