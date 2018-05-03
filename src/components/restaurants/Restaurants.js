@@ -5,7 +5,7 @@ class Restaurants extends Component {
   render() {
 
     //const restaurants = this.props.store.getState().restaurants.map(function(restaurant){
-    //  return <Restaurant restaurant={restaurant} />
+    //  return <Restaurant restaurant={restaurant} store={this.props.store} />
     // })
 
     return(
