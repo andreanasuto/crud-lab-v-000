@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReviewInput from './components/reviews/ReviewInput'
 
 class Restaurant extends Component {
   handleClick = (event) => {
