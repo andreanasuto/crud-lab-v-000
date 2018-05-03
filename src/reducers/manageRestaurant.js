@@ -10,7 +10,7 @@ export default function manageRestaurants(state, action) {
       const restaurants = state.restaurants.filter(function(el){
         return el.id !== action.id
       })
-      return {restaurants}
+      return restaurants
     default:
       return state
   }
