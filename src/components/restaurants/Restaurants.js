@@ -5,12 +5,12 @@ class Restaurants extends Component {
   render() {
 
     // const restaurants = this.props.store.getState().map(function(restaurant){
-      return <Restaurant restaurant={restaurant} />
+    //  return <Restaurant restaurant={restaurant} />
     // })
 
     return(
       <ul>
-        {restaurants}
+        // {restaurants}
       </ul>
     );
   }
