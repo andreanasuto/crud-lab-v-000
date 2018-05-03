@@ -6,10 +6,11 @@ class RestaurantInput extends Component {
     this.state = ({
       text: ''
     })
-    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  
   handleChange = (event) => {
     this.setState({
       text: event.target.value
