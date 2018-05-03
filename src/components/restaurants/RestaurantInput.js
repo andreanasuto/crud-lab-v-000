@@ -11,13 +11,13 @@ class RestaurantInput extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange = (event) => {
+  handleChange(event) => {
     this.setState({
       text: event.target.value
     })
   }
 
-  handleOnSubmit = (event) => {
+  handleOnSubmit(event) => {
     event.preventDefault();
     this.props.store.dispatch({
       type: 'ADD_RESTAURANT',
