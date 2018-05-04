@@ -5,7 +5,7 @@ class Reviews extends Component {
   render() {
     const {store, restaurantId} = this.props
     const filteredReviews = store.getState().reviews.filter(function(el){
-       el.id === restaurantId
+      return el.id === restaurantId
     })
 
     const reviews = filteredReviews.map(function(el){
