@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import ReviewInput from '../reviews/ReviewInput';
 
 class Restaurant extends Component {
+  constructor() {
+
+  }
+  
   handleClick = (event) => {
     event.preventDefault();
     this.props.store.dispatch({
