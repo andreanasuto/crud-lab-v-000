@@ -8,7 +8,7 @@ class Reviews extends Component {
        el.id === restaurantId)
 
     const reviews = filteredReviews.map(function(review) {
-      return <Review store={store} review={review}/>
+      return <Review store={store} review={review} />
     })
 
     return (
