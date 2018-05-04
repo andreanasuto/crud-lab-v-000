@@ -6,7 +6,6 @@ class Reviews extends Component {
     return (
       <ul>
         <ReviewInput store={this.props.store} />
-        Reviews
       </ul>
     );
   }
