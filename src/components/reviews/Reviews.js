@@ -5,7 +5,6 @@ class Reviews extends Component {
   render() {
     return (
       <ul>
-        <ReviewInput store={this.props.store} />
       </ul>
     );
   }
