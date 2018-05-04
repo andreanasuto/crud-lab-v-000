@@ -5,8 +5,7 @@ class ReviewInput extends Component {
   constructor(){
     super()
     this.state = {
-      text: '',
-      restaurantId: 0
+      text: ''
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -16,7 +15,6 @@ class ReviewInput extends Component {
   handleChange = (event) => {
     this.setState({
       text: event.target.value,
-      restaurantId: this.props.restaurantId
     })
   }
 
@@ -26,7 +24,7 @@ class ReviewInput extends Component {
       type: 'ADD_REVIEW',
       review: {
         text: this.state.text,
-        restaurantId: this.state.restaurantId
+        restaurantId: this.props.restaurantId
       }
       })
   }
