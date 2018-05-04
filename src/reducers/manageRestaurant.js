@@ -5,7 +5,7 @@ export default function manageRestaurants(state = {restaurants: [], reviews: []}
                                           action) {
   switch (action.type) {
     case 'ADD_RESTAURANT':
-      const restaurant = { action.restaurant.text, id: cuidFn() };
+      const restaurant = { text: action.restaurant.text, id: cuidFn() };
       return Object.assign({}, state, {restaurants: state.restaurants.concat(restaurant)})
 
     case 'DELETE_RESTAURANT':
