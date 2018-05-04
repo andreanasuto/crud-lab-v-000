@@ -24,7 +24,7 @@ class ReviewInput extends Component {
       type: 'ADD_REVIEW',
       review: {
         text: event.target.value,
-        id: event.target.id
+        restaurantId: this.props.restaurantId
       }
       })
   }
