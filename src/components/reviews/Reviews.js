@@ -8,7 +8,7 @@ class Reviews extends Component {
     })
 
     const reviews = filteredReviews.map(function(el){
-      return <Review />
+      return <Review review={el} />
     })
 
     return (
