@@ -5,7 +5,8 @@ class ReviewInput extends Component {
   constructor(){
     super()
     this.state = {
-      text: ''
+      text: '',
+      restaurantId: 0
     }
 
     this.handleChange = this.handleChange.bind(this);
