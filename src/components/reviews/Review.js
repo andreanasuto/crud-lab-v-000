@@ -6,7 +6,8 @@ class Review extends Component {
 
     handleClick = () => {
       this.props.store.dispatch({
-        action: 'DELETE_REVIEW'
+        action: 'DELETE_REVIEW',
+        id: this.props.review.id
       })
     }
   }
