@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 class Review extends Component {
+  constructor () {
+    super()
+
+    handleClick = () => {
+      
+    }
+  }
   render() {
     return (
       <li>
