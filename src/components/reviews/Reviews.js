@@ -7,9 +7,9 @@ class Reviews extends Component {
     const filteredReviews = store.getState().reviews.filter(el =>
        el.id === restaurantId)
 
-    const reviews = filteredReviews.map(el =>
-      <Review store={store} review={el}/>
-    )
+    const reviews = filteredReviews.map(function(el) {
+      return <Review store={store} review={el}/>
+    })
 
     return (
       <ul>
