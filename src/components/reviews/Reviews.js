@@ -3,9 +3,9 @@ import ReviewInput from './ReviewInput';
 
 class Reviews extends Component {
   render() {
-    const store = this.props
+    const {store, restaurantId} = this.props
     const filteredReviews = store.getState().reviews.filter(function(el){
-       el.id === this.props.restaurantId
+       el.id === restaurantId
     })
 
     const reviews = filteredReviews.map(function(el){
