@@ -9,7 +9,7 @@ class Reviews extends Component {
     })
 
     const reviews = filteredReviews.map(function(el){
-      return <Review store{store} review={el}/>
+      return <Review store={store} review={el}/>
     })
 
     return (
