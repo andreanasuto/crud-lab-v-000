@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import ReviewInput from './ReviewInput';
 
 class Reviews extends Component {
+  store = {this.props}
   render() {
-    const filteredReviews = this.props.store.getState().restaurants.filter(function(el){
+    const filteredReviews = store.getState().restaurants.filter(function(el){
        el.id = this.props.restaurantId
     })
 
