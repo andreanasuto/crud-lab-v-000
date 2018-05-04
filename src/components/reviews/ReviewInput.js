@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Review from './ReviewInput';
+import Review from './Review';
 
 class ReviewInput extends Component {
   constructor(){
@@ -35,6 +35,7 @@ class ReviewInput extends Component {
         <form onSubmit={this.handleSubmit}>
           <input type='text' value={this.state.text} onChange={this.handleChange}/>
           <input type='submit' />
+        <Review />
         </form>
       </div>
     );
