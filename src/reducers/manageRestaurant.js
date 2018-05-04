@@ -17,6 +17,11 @@ export default function manageRestaurants(state = {restaurants: [], reviews: []}
       const review = Object.assign({}, action.review, { id: cuidFn() })
       return Object.assign({}, state, {reviews: state.reviews.concat(review)})
 
+    case 'DELETE_REVIEW':
+      const restaurants = state.restaurants.filter(function(el){
+      return el.id !== action.id })
+      return Object.assign({}, state, {restaurants})
+
     default:
       return state
   }
