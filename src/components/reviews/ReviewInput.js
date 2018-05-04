@@ -23,7 +23,7 @@ class ReviewInput extends Component {
     this.props.store.dispatch({
       type: 'ADD_REVIEW',
       review: {
-        text: event.target.value,
+        text: this.state.text,
         restaurantId: this.props.restaurantId
       }
       })
