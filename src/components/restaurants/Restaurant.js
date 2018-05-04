@@ -8,7 +8,7 @@ class Restaurant extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (event) => {
+  handleClick = () => {
     event.preventDefault();
     this.props.store.dispatch({
       type: 'DELETE_RESTAURANT',
