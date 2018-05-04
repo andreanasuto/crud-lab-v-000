@@ -5,7 +5,9 @@ class Review extends Component {
     super()
 
     handleClick = () => {
-      
+      this.props.store.dispatch({
+        action: 'DELETE_REVIEW'
+      })
     }
   }
   render() {
